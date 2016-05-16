@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(href='/libs/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .navbar.navbar-default.navbar-fixed-top
+      ul.nav.navbar-nav
+        li.active
+          a(href='/blog')
+            i.fa.fa-file-text-o.fa-fw
+            |  首页
+        li
+          a(href='/guestbook')
+            i.fa.fa-edit.fa-fw
+            |  留言
+        li
+          a(href='/about')
+            i.fa.fa-user.fa-fw
+            |  关于
+
+
+    block content
